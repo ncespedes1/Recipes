@@ -1,0 +1,160 @@
+#root {
+  max-width: 1280px;
+  min-width: 680px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  text-align: center;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+}
+
+#recipeForm{
+    border: solid 2px rgb(247, 232, 209);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    background-color: rgb(255, 241, 223);
+}
+
+h1{
+    color: rgb(225, 110, 129);
+    font-variant: small-caps;
+}
+
+#recipeForm input{
+    border: transparent;
+}
+
+#recipeTitle{
+    margin: 5px;
+    padding: 5px;
+
+    height: 5vh;
+    width: 50vw;
+}
+
+#recipeDescription{
+    margin: 5px;
+    padding: 5px;
+
+    height: 15vh;
+    width: 50vw;
+
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    border: transparent;
+    /* vertical-align: top; */
+    /* display: flex; */
+}
+
+#recipeServings{
+    margin: 5px;
+    padding: 5px;
+
+    /* align-self: end; */
+}
+
+#recipeDropdowns{
+    margin: 10px;
+
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.recipe-drop{
+    padding: 10px;
+
+    width: 15vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-drop select{
+    margin: 8px 0;
+    padding: 4px;
+
+    border: transparent;
+}
+
+.recipe-image-input{
+    margin-bottom: 15px;
+}
+
+.recipe-image{
+    height: 100px;
+    
+}
+#ingredientSection{
+    border: solid 2px rgb(239, 191, 191);
+    border-radius: 15px;
+
+    margin: 10px;
+    padding: 15px;
+
+    background-color: rgb(241, 152, 152);
+}
+
+.ingredient-data{
+    padding: 5px;
+}
+
+.ingredient-data input{
+    padding: 4px;
+}
+
+.ingredient-data select{
+    padding: 4px;
+
+    border: transparent;
+}
+
+.ingredientName{
+    width: 30vw;
+
+    margin: 0 10px 0 0;
+}
+
+.ingredientQuantity{
+    width: 12vw;
+    margin: 0 5px;
+}
+
+.remove-btn{
+    margin: 0 0 0 15px;
+    padding: 5px 15px;
+
+    background-color: rgb(185, 37, 64);
+    color: white;
+
+    border: transparent;
+    border-radius: 15px;
+}
+
+#addIngredientBtn{
+    margin-top: 15px;
+    padding: 5px 15px;
+
+    border: transparent;
+    border-radius: 5px;
+}
+
+#addRecipeBtn{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 12px 25px;
+
+    background-color: rgb(185, 37, 79);
+    color: white;
+
+    border: transparent;
+    border-radius: 15px;
+}
