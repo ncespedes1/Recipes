@@ -208,6 +208,11 @@ const RecipeSubmissionForm = () => {
             <div id='recipeList'>
                     {recipeList.map(recipe=> (
                         <div className='recipe-card' id={recipe.id} key={recipe.id}>
+                            
+                            {recipe.image && 
+                            <img src={recipe.image} alt='Recipe Image' className='recipe-image' />
+                            }
+
                             <h3>{recipe.title}</h3>
                             <p>{recipe.description}</p>
                             <p>{recipe.serving}</p>
