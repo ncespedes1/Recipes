@@ -11,7 +11,7 @@
 }
 
 #recipeForm{
-    border: solid 2px rgb(247, 232, 209);
+    border: solid 2px rgb(209, 236, 247);
     border-radius: 15px;
     margin: 5px;
     padding: 15px;
@@ -21,7 +21,7 @@
     /* justify-content: center; */
     align-items: center;
 
-    background-color: rgb(255, 241, 223);
+    background-color: rgb(223, 250, 255);
 }
 
 h1{
@@ -89,9 +89,9 @@ h1{
     margin-bottom: 15px;
 }
 
-.recipe-image{
+.recipe-preview{
     height: 100px;
-    
+
 }
 #ingredientSection{
     border: solid 2px rgb(239, 191, 191);
@@ -100,7 +100,7 @@ h1{
     margin: 10px;
     padding: 15px;
 
-    background-color: rgb(241, 152, 152);
+    background-color: rgb(227, 162, 173);
 }
 
 .ingredient-data{
@@ -157,4 +157,71 @@ h1{
 
     border: transparent;
     border-radius: 15px;
+}
+
+#recipeList{
+    margin: 10px;
+}
+
+.recipe-card{
+    padding: 20px;
+    margin: 15px 0;
+
+    border: solid 3px rgb(231, 166, 181);
+    border-radius: 5px;
+
+    display: flex;
+}
+
+.recipe-image{
+    max-width: 400px;
+}
+
+/* .card-stats{
+    display: inline;
+} */
+
+.card-stat{
+    padding: 0;
+    margin: 8px;
+
+    font-variant: all-small-caps;
+}
+
+.recipe-card-data{
+    /* width: 50vw; */
+    
+    margin-left: 15px;
+
+    background-color: rgb(245, 229, 231);
+}
+
+.recipe-card h3{
+    padding: 0 5px;
+
+    font-size: 5vh;
+    
+    font-variant: small-caps;
+}
+
+.card-description{
+    padding: 20px 10px;
+    margin: 10px 35px;
+    
+    background-color: rgb(216, 149, 160);
+
+    border-radius: 5px;
+}
+
+h4{
+    margin: 10px;
+}
+
+.card-ingredients{
+    margin: 15px 0;
+}
+
+.card-ingredient{
+    padding: 2px;
+
 }

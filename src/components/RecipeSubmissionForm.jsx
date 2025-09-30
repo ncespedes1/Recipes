@@ -162,7 +162,7 @@ const RecipeSubmissionForm = () => {
                 type="file" name='image' accept="image/*" alt="Recipe Image" width="50" height="50"></input>
 
                 {recipe.image && 
-                <img src={recipe.image} alt='Recipe Image' className='recipe-image' />
+                <img src={recipe.image} alt='Recipe Image' className='recipe-preview' />
                 }
                 
 
@@ -208,20 +208,36 @@ const RecipeSubmissionForm = () => {
             <div id='recipeList'>
                     {recipeList.map(recipe=> (
                         <div className='recipe-card' id={recipe.id} key={recipe.id}>
-                            
+                            <div className='card-left'>
                             {recipe.image && 
                             <img src={recipe.image} alt='Recipe Image' className='recipe-image' />
                             }
+                                <div className='card-stats'>
+                                    <p className='card-stat card-serving'>Servings: {recipe.serving}</p>
+                                    <p className='card-stat card-difficulty'>Difficulty: {recipe.difficulty}</p>
+                                    <p className='card-stat card-category'>Category: {recipe.category}</p>
+                                    <p className='card-stat card-cuisine-type'>Cuisine Type: {recipe.cuisineType}</p>
+                                </div>
+                            </div>
 
-                            <h3>{recipe.title}</h3>
-                            <p>{recipe.description}</p>
-                            <p>{recipe.serving}</p>
-                            <p>{recipe.difficulty}</p>
-                            <p>{recipe.category}</p>
-                            <p>{recipe.cuisineType}</p>
-                            {/* <div>{recipe.ingredients}</div> */}
-                            <button onClick={() => removeRecipe(recipe.id)}
+                            <div className='recipe-card-data'>
+                                <h3>{recipe.title}</h3>
+                                <p className='card-description'>Description: <br/> {recipe.description}</p>
+                                <div class='card-ingredients'>
+                                    <h4>Ingredients:</h4>
+                                    {recipe.ingredients.map((ingredient, index) => (
+                                        <div key ={index} className='card-ingredient'>
+                                            {ingredient.name} {ingredient.quantity} {ingredient.unit}
+                                        </div>
+                                    ))}
+                                </div>                              
+                                
+                                <button onClick={() => removeRecipe(recipe.id)}
                                 className='remove-btn'>Remove</button>
+                            </div>
+
+                            
+                            
                         </div>
                     ))}
             </div>
