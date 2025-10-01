@@ -213,10 +213,10 @@ const RecipeSubmissionForm = () => {
                             <img src={recipe.image} alt='Recipe Image' className='recipe-image' />
                             }
                                 <div className='card-stats'>
-                                    <p className='card-stat card-serving'>Servings: {recipe.serving}</p>
-                                    <p className='card-stat card-difficulty'>Difficulty: {recipe.difficulty}</p>
-                                    <p className='card-stat card-category'>Category: {recipe.category}</p>
-                                    <p className='card-stat card-cuisine-type'>Cuisine Type: {recipe.cuisineType}</p>
+                                    <p className='card-stat card-serving'>Servings:  {recipe.serving}</p>
+                                    <p className='card-stat card-difficulty'>Difficulty:  {recipe.difficulty}</p>
+                                    <p className='card-stat card-category'>Category:  {recipe.category}</p>
+                                    <p className='card-stat card-cuisine-type'>Cuisine Type:  {recipe.cuisineType}</p>
                                 </div>
                             </div>
 

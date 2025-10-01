@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 2rem;
 
-  text-align: center;
+  /* text-align: center; */
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   
@@ -67,6 +67,8 @@ h1{
 
     display: flex;
     /* justify-content: space-around; */
+
+    text-align: center;
 }
 
 .recipe-drop{
@@ -101,6 +103,8 @@ h1{
     padding: 15px;
 
     background-color: rgb(227, 162, 173);
+
+    text-align: center;
 }
 
 .ingredient-data{
@@ -202,6 +206,7 @@ h1{
     font-size: 5vh;
     
     font-variant: small-caps;
+    text-align: center;
 }
 
 .card-description{
@@ -211,6 +216,8 @@ h1{
     background-color: rgb(216, 149, 160);
 
     border-radius: 5px;
+
+    /* min-width: 35vw; */
 }
 
 h4{
@@ -219,9 +226,20 @@ h4{
 
 .card-ingredients{
     margin: 15px 0;
+
+    text-align: center;
+    
 }
 
 .card-ingredient{
     padding: 2px;
+}
+
+.recipe-card-data button{
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-self: end;
 
 }
